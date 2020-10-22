@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    
+    background: url(../img/9.jpg) center center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial","Tahoma","Helvetica","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.container{
+    width: 900px;
+    height: 700px;
+    display: none;
+}
+.container .reg{
+    display: inline-block;
+    width: 450px;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.container .reg .tit{
+    font-size: 2rem;
+}
+.container input,
+.container select{
+    display: block;
+    width: 320px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: transparent;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.container select{
+    height: 66px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.container select option{
+    color: #121822;
+}
+input::-webkit-input-placeholder,
+select::-webkit-select-placeholder{
+    color: #ffffff;
+    font-size: 16px;
+}
+input::-webkit-autofill{
+    background-color: transparent;
+}
+.container .btn{
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    font-size: 17px;
+    line-height: 55px;
+    text-align: center;
+    outline: none;
+    border: solid 1px transparent;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #495466;
+    position: relative;
+    top: 40px;
+    left: 285px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.container .btn:hover{
+    color: #495466;
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0);
+}
+.container .intro{
+    display: inline-block;
+    color: #ffffff;
+    width: 350px;
+    padding-left: 70px;
+    position: absolute;
+}
+.container .intro .header h1{
+    width: 170px;
+    margin-bottom: 10px;
+}
+.container .intro .header p{
+    margin-bottom: 20px;
+}

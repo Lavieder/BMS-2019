@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb{
+    margin: 0;
+}
+.main{
+    height: 120px;
+}
+.top input{
+    outline: none;
+}
+.top .span{
+    display: flex;
+    height: 66px;
+    align-items: center;
+    margin: 0;
+    padding-left: 25px;
+    border-bottom: 1px solid #ccc;
+}
+.p{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+}
+.span .btn{
+    outline: none;
+    padding: 2px 23px;
+    /* margin-left: 40px; */
+    background: #333961;
+    color: white;
+    border-radius: 0;
+}
+.span .select{
+    margin-left: 40px;
+}
+.span .btn-secondary{
+    background-color: #ffffff;
+    color: #333961;
+}
+.p .a{
+    display: inline-block;
+    height: 37px;
+    line-height: 34px;
+    width: 100px;
+    margin: 0 20px 0 0;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .2s linear;
+}
+.p .a:nth-child(1){
+    background: #33a533;
+    margin-left: 25px;
+    padding-left: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.p .a:hover{
+    text-decoration: none;
+    background: #333961;
+    color: #ffffff;
+}
+.table{
+    width: 85%;
+    margin: 0 0 0 25px;
+}
+table th,
+table td{
+    text-align: center;
+    vertical-align: middle!important;
+    border: 1px solid #ccc;
+}
+#delModal .mct{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0;
+    outline: 0;
+}
+#delModal .mhd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+#delModal .mhd .mtl{
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+#delModal .mhd .close{
+    padding: 0rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+    outline: 0;
+}
+#delModal .mct .mbd{
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0rem 2.3rem;
+}
+#delModal .mct .mbd p{
+    margin: 0;
+}
+#delModal .mft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #dee2e6;
+}
+#delModal .mft .ok{
+    font-size: 0.9rem;
+    outline: 0;
+}
+
+.btn-success:not(:disabled):not(.disabled).active:focus, 
+.btn-success:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-success.dropdown-toggle:focus,
+.btn-success:not(:disabled):not(.disabled).active, 
+.btn-success:not(:disabled):not(.disabled):active, 
+.show>.btn-success.dropdown-toggle,
+.btn-success.focus, .btn-success:focus,
+.btn-warning:not(:disabled):not(.disabled).active:focus, 
+.btn-warning:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-warning.dropdown-toggle:focus,
+.btn-warning:not(:disabled):not(.disabled).active, 
+.btn-warning:not(:disabled):not(.disabled):active, 
+.show>.btn-warning.dropdown-toggle,
+.btn-warning.focus, .btn-warning:focus,
+.btn.focus, .btn:focus {
+    outline: none; 
+    box-shadow: none;
+}

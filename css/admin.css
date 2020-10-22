@@ -1,0 +1,107 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#cantainer {
+    position: relative;
+    padding-top: 70px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #2e3446;
+    font: bold 27px/70px 'Algerian';
+    color: #f7f7f7;
+    text-indent: 50px;
+    box-shadow: 0 5px 5px rgba(161, 161, 161, 0.6);
+    z-index: 5;
+}
+#top #time{
+    position: absolute;
+    right: 50px;
+    font-family: auto;
+    font-size: 17px;
+}
+
+#main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 210px;
+}
+
+#left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px #cccccc;
+    z-index: 4;
+    overflow: hidden;
+}
+
+#left #p{
+    margin: 20px 0 10px;
+    padding: 10px 0 2px 20px;
+    color: #cccccc;
+}
+
+.menu .li .a{
+    display: block;
+    height: 50px;
+    width: 190px;
+    color: #000000;
+    border-bottom: 1px solid #b1b1b1;
+    border-left: 4px solid transparent;
+    line-height: 47px;
+    padding-left: 20px;
+    transition: background-color 0.2s linear;
+    position: relative;
+}
+.menu .li .a:hover{
+    background: #6e7ca3;
+    border-left: 4px solid #2b2746;
+    color: #fff;
+}
+.menu .li .iconfont{
+    padding-right: 10px;
+}
+.menu .li .icon{
+    display: inline-block;
+    font-family: 'FontAwesome';
+    transition: 0.2s;
+    transform-origin: center 50%;
+    position: absolute;
+    right: 2px;
+}
+.menu .exit,
+.menu .home{
+    border-bottom: 0;
+}
+.item{
+    display: none;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+#right {
+    height: 100%;
+}

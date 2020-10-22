@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 阻止浏览器缓存 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <title>图书管理系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/Popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>我的图书馆</h2>
+            <form action="sever/admin/loginCheck.php" method="post">
+                <div class="form-group">
+                    <input type="text" name="id" id="id" class="form-control" placeholder="来 你的账号" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="pwd" id="pwd" class="form-control" placeholder="来 你的密码" required>
+                </div>
+                <div class="form-group yz">
+                    <div class="form-inline">
+                        <input type="text" name="vcode" id="yzm" class="form-control" placeholder="来 右边验证码" required>
+                        <img src="sever/admin/vcode.php" onclick="this.src='sever/admin/vcode.php?t='+Math.random()" class="img" title="看不清请点我"  alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="radio" name="rad" id="ad" value="1" required>
+                        <label class="col-form-label ad" for="ad">管理员</label>
+                    <input type="radio" name="rad" id="rd" value="0" required>
+                        <label class="col-form-label rd" for="rd">读者</label>
+                </div>
+                <button type="submit" class="btn">登录</button>
+                <a href="sever/join.html" target="_blank" class="reg">没有账号？那就先注册一个吧!</a>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/loginCheck.js"></script>
+</html>
